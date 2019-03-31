@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>首页</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>按钮 button</h2>
+  <button ion-button small outline>按钮</button>
+
+  <button ion-button small color="he">自定义的颜色</button>
+
+
+
+  <button ion-button small clear  >Light Round</button>
+  <br>
+  <button ion-button small >Primary Round</button>
+  <br>
+  <button ion-button color="secondary" >Secondary Round</button>
+  <br>
+  <button ion-button color="danger" block>Danger Round</button>
+  <br>
+  <button ion-button color="dark"  class="button-block" (click)="showToast()">Toast提示</button>
+  <br>
+  <button ion-button color="danger" class="button-block button-round-ios" (click)="myAlert()">alert提示</button>
+  <br>
+  <button ion-button color="secondary" outline icon-start>
+    <ion-icon name='paw' is-active="false"></ion-icon>
+    Best Friend
+  </button>
+
+  <button ion-button icon-left>
+    <ion-icon name="star"></ion-icon>
+    star
+  </button>
+
+</ion-content>

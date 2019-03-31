@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      文章
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item-sliding *ngFor="let he of contacts">
+            <ion-item (click)="onClick(event,he)">
+                <ion-avatar item-left>
+                    <img src="../assets/imgs/{{he.img}}.jpg" alt=""/>
+                </ion-avatar>
+                <h3 class="mymargin">{{he.name}}</h3>
+                <p>{{he.text}}</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="danger" (click)="deleteItem(he)">删除</button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-left>
+              <img src="../assets/imgs/bg2.jpg" alt=""/>
+            </ion-avatar>
+            <h3>lisa</h3>
+            <p>lisa is a beuterful girl</p>
+        </ion-item>
+       <img src="../assets/imgs/bg2.jpg" alt=""/>
+        <ion-card-content>
+            <p>今天的天气好好啊！阳光明媚，风和日丽！明天去丽江！</p>
+        </ion-card-content>
+        <ion-item>
+            <button ion-button  clear color="dark">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>113 赞</div>
+            </button>
+            <button ion-button  clear color="dark">
+                <ion-icon name="text"></ion-icon>
+                <div>600 评论</div>
+            </button>
+            <ion-note item-right>1小时前</ion-note>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-left>
+              <img src="../assets/imgs/bg3.jpg" alt=""/>
+            </ion-avatar>
+            <h3>marry</h3>
+            <p>good good study,day day up!</p>
+        </ion-item>
+       <img src="../assets/imgs/bg3.jpg" alt=""/>
+        <ion-card-content>
+            <p>今天的天气好好啊！阳光明媚，风和日丽！明天去丽江！</p>
+        </ion-card-content>
+        <ion-item>
+            <button ion-button  clear color="dark">
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>113 赞</div>
+            </button>
+            <button ion-button  clear color="dark">
+                <ion-icon name="text"></ion-icon>
+                <div>600 评论</div>
+            </button>
+            <ion-note item-right>1小时前</ion-note>
+        </ion-item>
+    </ion-card>
+
+
+</ion-content>

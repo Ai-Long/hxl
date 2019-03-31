@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      用户中心
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+      <ion-item>
+          <ion-label stacked>用户名</ion-label>
+          <ion-input type="text" value="" #username></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label stacked>密码</ion-label>
+          <ion-input type="password" value="" #password></ion-input>
+      </ion-item>
+  </ion-list>
+  <button ion-button block color="myblue" (click)="login(username,password)">登录</button>
+  <ion-row>
+    <ion-col  col-6 offset-6>
+      <div>
+        <button ion-button small outline  color="he" (click)="register()">还没有账号，点击注册</button>
+      </div>
+    </ion-col>
+  </ion-row>
+    <!--<ion-row>
+        <img src="{{user}}" (click)="uploadImage()"/>
+    </ion-row>-->
+</ion-content>
